@@ -1,2 +1,2 @@
 #!/bin/bash
-find -maxdepth 0 -type d | wc -l
+dir_count=`find . -maxdepth 1 -mindepth 0 -type d | wc -l | xargs`;echo
